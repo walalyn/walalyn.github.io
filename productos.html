@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>TIENDAS INFORMATIC</title>
+    <link rel="icon" href="img/icon.png"/>
+
+    <link rel="manifest" href="/manifest.json">
+    
+    <link rel="stylesheet" href="css/main.css" >
+    <link rel="stylesheet" href="css/movil.css" >
+    <link rel="stylesheet" href="css/carrusel.css"/>
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <!--CARRUSEL-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<body>
+    <div class="logo">
+        <img src="img/logo.png" alt="Logo Mis Perris" class="LogoMP">
+    </div>
+
+
+<div class="wrapper">
+
+
+    <!--MENU-->
+    <header class="header">
+        <div class="contenedor">
+            <span class="icon-bars" id="btn-menu"></span>
+            <nav class="nav" id="nav">
+                <ul class="menu">
+                <li><a class="menu__link" href="index.html">&#127968; Inicio</a></li>
+                <li><a class="menu__link" href="productos.html">&#128230; Productos</a></li>
+                <li><a class="menu__link" href="ventas.html">&#128181; Ventas</a></li>
+                <li><a class="menu__link" href="login.html">&#128273; Entrar</a></li>
+        
+                </ul>   
+            </nav>
+        </div>
+    </header>
+    <!--MENU-->
+    
+
+    <!--SOBRE NOSOTROS-->
+    <nav class="main-nav">
+           <h2>SOBRE NOSOTROS</h2>
+
+           <p><b>INFORMATIC</b> es una tienda electronica con la mayor cadena de tiendas especialista en tecnología del país. En sus inicios, el foco estuvo en el rubro de los computadores de escritorio, partes y piezas, componentes y accesorios de computación. Con el pasar de los años fue incorporando nuevas categorías a su mix, con el fin de acercar la tecnología a los clientes; tanto personas como pequeñas y medianas empresas. Su amplio mix incluye, además del mundo de computación, la telefonía, audio y televisores.</p><br>
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3326.618249829142!2d-70.75448638441163!3d-33.51130798075673!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662dcd1fe0c7bab%3A0x4d17b82a7ba77488!2sDuoc+UC%3A+Sede+Maipu!5e0!3m2!1ses-419!2scl!4v1544669774361" width="200" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </nav>
+    <!--SOBRE NOSOTROS--> 
+
+
+    <!--MAIN-->
+    <article class="content">
+
+            <section class="textos">
+                    <h3 align='center'><b>LISTADO DE PRODUCTOS INGRESADOS</b></h3> 
+                    <p align='center'>A continuación, se mostrarán los productos ingresados y registrados.</p>
+                <br>
+                <br>
+                <main>
+                        <p align='center'>Buscar por <b>"Tipo":</b></p>
+                    <select id="tiendaTipoFilter" class="tiendaTipoFilter">
+                        <option value="Notebooks">Notebooks</option>
+                        <option value="Tarjeta_Grafica">Tarjeta_Grafica</option>
+                        <option value="Audifonos">Audifonos</option>
+                        <option value="Computadores">Computadores</option>
+                    </select>
+                
+                    <br>
+                    <br>
+                
+                    <div id="ProductosContainer" class="ProductosContainer">
+                        
+                    </div>
+                </main>
+                
+                </section>
+
+
+
+
+
+
+
+      </article> 
+    <!--MAIN-->
+
+
+     <!--ASIDE-->   
+    <aside class="aside">
+      <h2 align="center">CATÁLOGO</h2>
+      <div class="img-aside">
+
+        <img src="img/ad1.jpg" alt="SeccionNotebooks" class="imgaside" >
+        <img src="img/ad2.jpg" alt="SeccionTarjetasG" class="imgaside">
+        <img src="img/ad3.jpg" alt="SeccionAudifonos" class="imgaside">
+        <img src="img/ad4.jpg" alt="SeccionPC" class="imgaside">
+       </div>
+
+      </aside>
+     <!--ASIDE-->    
+        
+  
+
+    <!--FOOTER-->
+    <footer class="main-footer" align="center">
+
+      <p>Correo electronico:
+      <a href="mailto:contacto@misperris.cl">contacto@misperris.cl</a></p>
+
+      <p>Teléfono
+      <a href="tel:+56981488490">+56 9 8 148 84 90</a></p>
+
+              <p>Copyright © 2018 INFORMATIC Todos los derechos reservados. Prohibida su copia parcial o total bajo la ley nacional e internacional.</p> 
+    </footer>
+
+    
+    </div>
+
+
+    <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/app2.js"></script>
+    <script src="/service-worker.js"></script>
+</body>
+</html>

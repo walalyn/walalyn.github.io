@@ -1,0 +1,364 @@
+* {
+    box-sizing: border-box;
+}
+
+
+body{
+    width: 100%;
+    border:0;
+    text-align: justify;
+    font-size: 18px;
+    background-color: #e0e5f0;
+    background-image: url("../img/fondo.jpg"); 
+}
+
+
+    .wrapper {
+        max-width: 100%;
+        margin: 0 auto;
+        font: 1.2em Helvetica, arial, sans-serif;
+    }
+
+
+    .main-head{
+        border: 2px solid #264e70;
+        background-color: #000000;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+    .main-nav{
+        border: 2px solid #264e70;
+        background-color: #414141;
+        border-radius: 5px;
+        padding: 10px;
+
+        border: 35px solid;
+        border-image-source: url("../img/imgborde.png");
+        border-image-slice: 40;
+
+        background-image: url("../img/fondo1.png");
+        background-size: 12%;
+    }
+
+
+    .content{
+        border: 2px solid #264e70;
+        background-color: #626262;
+        border-radius: 5px;
+        padding: 10px;
+
+        border: 35px solid;
+        border-image-source: url("../img/imgborde.png");
+        border-image-slice: 40;
+
+        background-image: url("../img/fondo1.png");
+        background-size: 15%;
+    }
+
+    .aside{
+        border: 2px solid #264e70;
+        background-color: #414141;
+        border-radius: 5px;
+        padding: 10px;
+
+
+        border: 35px solid;
+        border-image-source: url("../img/imgborde.png");
+        border-image-slice: 40;
+
+
+        background-image: url("../img/fondo1.png");
+        background-size: 12%;
+
+    }
+
+    .aside2{
+        border: 2px solid #264e70;
+        background-color: #414141;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+    .main-footer{
+        border: 2px solid #1d3b55;
+        background-color: #264e70;
+        border-radius: 5px;
+        padding: 10px;
+
+        border: 35px solid;
+        border-image-source: url("../img/imgborde.png");
+        border-image-slice: 40;
+
+        background-image: url("../img/fondo1.png");
+        background-size: 12%;
+    }
+
+
+
+
+.imgaside {
+    padding: 10px;
+    display:block;
+    margin:auto;
+}
+
+
+
+/*PROPIEDADES DEL WRAPPER*/
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, [col-start] 1fr);
+  grid-gap: 20px;
+}
+.wrapper > * {
+  grid-column: col-start / span 12;
+}
+
+
+@media (min-width: 500px) {
+
+  .aside {
+    grid-column: col-start / span 3;
+    grid-row: 3;
+  }
+  .aside2 {
+    grid-column: col-start / span 3;
+    grid-row: 4;
+  }
+  .content, .main-footer {
+    grid-column: col-start 4 / span 9;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-between;
+  } 
+}
+
+
+@media (min-width: 700px) {
+  .main-nav {
+    grid-column: col-start / span 2;
+    grid-row: 2 / 4;
+  }
+  .content {
+    grid-column: col-start 3 / span 8;
+    grid-row: 2 / 4;
+  }
+  .aside {
+    grid-column: col-start 11 / span 2;
+    grid-row: 2;
+  }
+  .aside2 {
+    grid-column: col-start 11 / span 2;
+    grid-row: 3;
+  }
+  .main-footer {
+    grid-column: col-start / span 12;
+  }
+
+}
+/*PROPIEDADES DEL WRAPPER*/
+
+
+
+
+
+/*OFF CANVAS*/
+.contenedor{
+    width: 100%;   
+    position: relative;
+
+    z-index: 2;
+}
+
+
+
+/*NAV*/
+.header{
+    height: 60px;
+
+    height:50px;
+    background-image: url("../img/imgbanner.gif");
+
+}
+
+.menu li{
+    color: #ffffff;
+}
+
+
+p{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(17, 0, 255);
+    font-family: "Calibri";
+    font-size: 18px;
+}
+
+.aside h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(17, 0, 255);
+    font-family: "Calibri";
+}
+
+.main-nav h2{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(17, 0, 255);
+    font-family: "Calibri";
+}
+
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;   
+}
+
+.textos h3, .content h3, .content b{
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 2px 5px rgb(17, 0, 255);
+    font-family: "Calibri";
+}
+
+.logo, .icon-bars{
+    margin: 5px;
+}
+
+
+.icon-bars {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    right: 310px;
+    font-size: 30px;
+    background: #2a0250;
+    color: rgb(0, 134, 252);
+    text-align: center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer;
+    border-style: outset;
+    border-color: aliceblue;
+}
+
+
+.logo{
+    position: absolute;
+    top:-1500px;
+    width: 50px;
+}
+
+
+.nav{
+    position: absolute;
+    top: 50px;
+    left: -100%;
+    width: 100%; 
+    transition: all 0.3s;
+}
+ 
+
+.menu{
+     list-style: none;
+     padding: 0;
+     margin: 0;    
+}
+
+
+
+.menu a{
+    color:rgb(255, 255, 255);
+    font-size: 18px;
+}
+
+
+.menu__link {
+     display: block;
+     padding: 10px;
+     background: #eba207;
+     text-decoration: none;
+     color:#eba207;
+     
+     margin-left: 100px;
+
+}
+
+
+.menu__link:hover, .select{
+     background: #ffffff;
+     color: rgb(0, 0, 0);
+}
+
+
+.mostrar {
+     left: 0;
+}
+/*OFF CANVAS*/
+
+
+
+/*AQUI VA DESHABILITA OFFCANVAS EN PC*/
+@media(min-width:1024px){
+    .contenedor{
+        width: 1500px;
+    }    
+    .nav {
+        position: static;
+        width: auto;
+    }
+    .menu{
+        display: flex;
+    }
+    .icon-bars {
+        display: none;
+    }
+    .menu__link{
+        background: none;
+    }
+    .select{
+        background: white;
+    }
+    .info__titulo{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+}
+
+    @media(min-width:1280px){
+        .contenedor{
+            width: 1200px;
+        }
+    }
+
+
+    .ProductosContainer {
+        width: 100%;
+    
+    }
+    
+    .ProductoContainer {
+        padding: 15px;
+        border-radius: 10px;
+        margin: 10px;
+        border: 2px rgb(255, 255, 255) dotted;
+        background-color: rgba(11, 4, 27, 0.671);
+        text-align: center;
+    }
+    
+    .ProductoContainer img {
+        border-radius: 10px;
+    }
+    
+    
+    .tiendaTipoFilter {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+
