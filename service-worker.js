@@ -5,26 +5,7 @@ var filesToCache = [
     '/login.html',
     '/productos.html',
     '/ventas.html',
-    "/js/app.js",
-    "/js/app2.js",
-    "/js/main.js",
-    "/css/carrusel.css",  
-    "/css/main.css",
-    "/css/movil.css",
-    "/img/ad1.jpg", 
-    "/img/ad2.jpg", 
-    "/img/ad3.jpg",
-    "/img/ad4.jpg",
-    "/img/carr1.jpg",
-    "/img/carr2.jpg",
-    "/img/carr3.jpg",
-    "/img/carr4.jpg",
-    "/img/fondo.jpg",
-    "/img/fondo1.jpg",
-    "/img/icon.png",
-    "/img/imgbanner.gif",
-    "/img/imgborde.png",
-    "/img/logo.png",
+ 
 ];
 
 
