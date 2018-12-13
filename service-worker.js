@@ -4,13 +4,11 @@ var filesToCache = [
     '/',
     '/index.html',
     '/login.html',
-    '/ventas.html',
     "/js/app.js",
     "/js/app2.js",
     "/js/main.js",
     "/css/main.css", 
     "/css/movile.css",
-    "/img/logo.png",
 
     
 ];
