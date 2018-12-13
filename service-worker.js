@@ -5,11 +5,7 @@ var filesToCache = [
     "/login.html",
     "/productos.html",
     "/js/app2.js",
-    "/js/app.js",
-    "/js/main.js",
-    "/css/carrusel.css",
     "/css/main.css",
-    "/css/movil.css",
 
     
 ];
